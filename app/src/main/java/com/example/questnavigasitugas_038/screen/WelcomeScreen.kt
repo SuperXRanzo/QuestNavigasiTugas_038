@@ -35,7 +35,7 @@ fun SplashScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(32.dp))
 
             Image(
-                painter = painterResource(id = R.drawable.Logo),
+                painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo CARD-LST",
                 modifier = Modifier.size(150.dp)
             )
