@@ -1,5 +1,6 @@
 package com.example.questnavigasitugas_038.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
@@ -14,6 +15,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.questnavigasitugas_038.R
 import com.example.questnavigasitugas_038.navigation.Screen
 
 @Composable
@@ -32,21 +34,11 @@ fun SplashScreen(navController: NavController) {
             )
             Spacer(modifier = Modifier.height(32.dp))
 
-            import androidx.compose.ui.res.painterResource
-            import com.example.questnavigasitugas_038.R
             Image(
-            painter = painterResource(id = R.drawable.logo.png),
-            contentDescription = "Logo CARD-LST",
-            modifier = Modifier.size(150.dp)
+                painter = painterResource(id = R.drawable.Logo),
+                contentDescription = "Logo CARD-LST",
+                modifier = Modifier.size(150.dp)
             )
-
-            Box(
-                modifier = Modifier.size(150.dp),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("LOGO ANDA DISINI", textAlign = TextAlign.Center)
-            }
-
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
